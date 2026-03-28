@@ -1,6 +1,8 @@
 {
   "license": "ISC",
   "scripts": {
+    "build": "cargo build-sbf --manifest-path programs/identity-registry/Cargo.toml && cargo build-sbf --manifest-path programs/issuer-config/Cargo.toml && cargo build-sbf --manifest-path programs/transfer-hook/Cargo.toml",
+    "test": "yarn run ts-mocha -p ./tsconfig.json -t 1000000 \"tests/**/*.ts\"",
     "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
     "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
   },

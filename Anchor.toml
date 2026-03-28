@@ -6,7 +6,14 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-solana_rwa_sdk = "3DWG7C87tM8fPWjPC9tcJpHZuLHC8xXNoEeXibU73PHy"
+identity-registry = "AumHWNchd7WXhsASUDsHp2mZZtsmFGcRvMrFWk3MLL6V"
+issuer-config = "BytoP9j6ZS6jcPPX3JWzxdRtSyN7RMsf55A9gYE5XWta"
+transfer-hook = "HcXBwuD8SxSEpmNcTfCKK4umEKKqoPYV5xXHsRf9Uasa"
+
+[programs.devnet]
+identity-registry = "AumHWNchd7WXhsASUDsHp2mZZtsmFGcRvMrFWk3MLL6V"
+issuer-config = "BytoP9j6ZS6jcPPX3JWzxdRtSyN7RMsf55A9gYE5XWta"
+transfer-hook = "HcXBwuD8SxSEpmNcTfCKK4umEKKqoPYV5xXHsRf9Uasa"
 
 [registry]
 url = "https://api.apr.dev"
