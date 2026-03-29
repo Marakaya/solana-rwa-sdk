@@ -22,6 +22,9 @@ custom-panic = []
 
 [dependencies]
 anchor-lang = "0.32.1"
+anchor-spl = { version = "0.32.1", features = ["token_2022_extensions"] }
+spl-transfer-hook-interface = "0.9.0"
+spl-tlv-account-resolution = "0.9.0"
 identity-registry = { path = "../identity-registry", features = ["cpi"] }
 issuer-config = { path = "../issuer-config", features = ["cpi"] }
 
